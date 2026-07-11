@@ -1,0 +1,32 @@
+.env
+.env.*
+!.env.example
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.ingestion_registry.db
+.ingestion_registry.db-journal
+.ingestion_registry.db-wal
+.ingestion_registry.db-shm
+
+# sample PDFs (not for github)
+sample_pdfs/
+
+# logs
+run.log
+server.log
+streamlit.log
+*.log
+
+# coverage
+.coverage
+htmlcov/
+.mypy_cache/
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

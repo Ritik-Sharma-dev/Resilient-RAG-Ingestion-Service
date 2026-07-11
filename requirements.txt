@@ -1,0 +1,28 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+
+# langgraph 0.3+ requires langchain-core>=1.x, which conflicts with
+# langfuse 2.x's legacy CallbackHandler (built on langchain<1.0). Pin the
+# whole triad to a known-compatible set rather than fighting resolver churn.
+langgraph>=0.2.0,<0.3.0
+langchain>=0.3.0,<0.4.0
+langfuse>=2.53.0,<3.0.0
+
+pinecone>=5.4.0
+openai>=1.54.0
+
+pdfplumber>=0.11.0
+
+tenacity>=9.0.0
+
+python-multipart>=0.0.12
+python-dotenv>=1.0.1
+
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+respx>=0.21.0
+
+streamlit>=1.39.0
+requests>=2.32.0
